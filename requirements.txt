@@ -1,0 +1,7 @@
+openai==1.84.0
+Pillow==11.2.1
+qwen_vl_utils==0.0.11
+torch==2.6.0
+torchvision==0.21.0
+tqdm==4.67.1
+transformers==4.52.4
