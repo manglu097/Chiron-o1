@@ -130,3 +130,5 @@ dmypy.json
 # Operating System Files
 .DS_Store
 Thumbs.db
+
+.ipynb_checkpoints/
