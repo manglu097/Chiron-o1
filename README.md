@@ -121,17 +121,17 @@ We perform a series of comprehensive experiments using four high-performance bas
 Compared to other multimodal medical reasoning models, Chiron-o1 demonstrates the ability to generate deep and reasonable reasoning paths, leading to correct answers.
 
 <div align=center>
-<img width="800" alt="image" src="assets/result2.png">
+<img width="750" alt="image" src="assets/result2.png">
 </div>
 
 
 <div align=center>
 <img width="550" alt="image" src="assets/result3.png">
 </div>
-<img src="assets/result2.png" style="max-width: 90%; height: auto; display: block; margin: auto; margin-bottom: 30px;" />
+<!-- <img src="assets/result2.png" style="max-width: 90%; height: auto; display: block; margin: auto; margin-bottom: 30px;" />
 
 
-<img src="assets/result3.png" style="max-width: 70%; height: auto; display: block; margin: auto;" />
+
 
 
 ## 🙏🏼 Acknowledgement
