@@ -1,5 +1,5 @@
 <div align="center">
-<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Chiron-o1: Igniting Multimodal Large Language Models towards Generalizable Medical Reasoning via Mentor-Intern Collaborative Search </h1>
+<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Chiron-o1: Enhancing Step-by-Step Reasoning in MLLMs for Verifiable Medical Reasoning via Mentor-Intern Collaborative Search </h1>
 </div>
 
 <h4 align="center"> If you find this project useful, please give us a star🌟.<h4 align="center"> 
@@ -21,7 +21,7 @@ We propose **Mentor-Intern Collaborative Search (MICS)**, a new multi-model coll
 
 We provide the code for generating step-by-step CoT reasoning based on MICS. You can try out MICS reasoning with the data in `./src/demo_data`. 
 
-Our MICS code now supports reasoning path search using [GPT-4o](https://openai.com/index/hello-gpt-4o/), [Gemini 2.5 Pro Preview](https://deepmind.google/models/gemini/pro/), [Qwen2.5-VL-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct) as mentor models and [Qwen25-VL-7B](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct), [Qwen2-VL-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct), [Internvl3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B) as intern models. (🌟 You can flexibly adjust it as needed. For details, see [this](https://github.com/manglu097/Chiron-o1/tree/main).)
+Our MICS code now supports reasoning path search using [GPT-4o](https://openai.com/index/hello-gpt-4o/), [Gemini 2.5 Pro Preview](https://deepmind.google/models/gemini/pro/), [Qwen2.5-VL-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct) as mentor models and [Qwen25-VL-7B](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct), [Qwen2-VL-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct), [Internvl3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B) as intern models. (🌟 You can flexibly adjust it as needed. For details, see [this](https://github.com/manglu097/Chiron-o1/blob/main/src/model.py).)
 
 **Due to [Radiopaedia](https://radiopaedia.org/)'s licensing, we do not directly provide the original dataset. Access to the original data containing the full dataset is restricted due to data licensing reasons. For access, please contact Radiopaedia to obtain a non-commercial license, and then reach out to the article authors.
 ```bash
@@ -52,7 +52,7 @@ python ./src/run.py \
 ```
 
 ## 🏋️ Training
-We use [InternVL](https://github.com/OpenGVLab/InternVL) to fine-tune the Chiron-o1 models. We provide the training instructions and configs [here](https://github.com/manglu097/Chiron-o1/tree/main). 
+We use [InternVL](https://github.com/OpenGVLab/InternVL) to fine-tune the Chiron-o1 models. We provide the training instructions and configs [here](https://github.com/manglu097/Chiron-o1/tree/main/train). 
 
 Specifically, for guidance on how to prepare the base model and custom data, please refer to the [official documentation](https://internvl.readthedocs.io/en/latest/internvl3.0/finetune.html).
 
@@ -73,7 +73,7 @@ GPUS=8 PER_DEVICE_BATCH_SIZE=2 sh shell/internvl2.5/2nd_finetune/internvl2_5_8b_
 | Chiron-o1-8B   | [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B) | [Link](https://huggingface.co/manglu3935/Chiron-o1-8B)   | 19GB |
 
 
-We provide an example of pure text reasoning using [transformers](https://huggingface.co/docs/transformers/index). For multimodal tasks, you can refer to the information [here](https://github.com/manglu097/Chiron-o1/tree/main).
+We provide an example of pure text reasoning using [transformers](https://huggingface.co/docs/transformers/index). For multimodal tasks, you can refer to the information [here](https://github.com/manglu097/Chiron-o1/blob/main/infer.py).
 
 ```python
 from transformers import AutoModel, AutoTokenizer
@@ -114,14 +114,14 @@ python ./eval/eval.py \
 
 We perform a series of comprehensive experiments using four high-performance baseline models: [HuatuoGPT-Vision](https://github.com/FreedomIntelligence/HuatuoGPT-Vision), [Med-R1](https://github.com/Yuxiang-Lai117/Med-R1), [MedVLM-R1](https://huggingface.co/JZPeterPan/MedVLM-R1), and others. The **Results** demonstrate the performance of the Chiron-o1 models compared to other cutting-edge models across various widely-used benchmarks, as illustrated in the table below.
 
-<img src="assets/result1.png" style="zoom: 33%; display: block; margin: auto;" />
+<img src="assets/result1.png" style="zoom: 30%; display: block; margin: auto;" />
 
 Compared to other multimodal medical reasoning models, Chiron-o1 demonstrates the ability to generate deep and reasonable reasoning paths, leading to correct answers.
 
 <img src="assets/result2.png" style="zoom: 36%; display: block; margin: auto; margin-bottom: 60px;" />
 
 
-<img src="assets/result3.png" style="zoom: 33%; display: block; margin: auto;" />
+<img src="assets/result3.png" style="zoom: 27%; display: block; margin: auto;" />
 
 
 ## 🙏🏼 Acknowledgement
