@@ -128,11 +128,6 @@ Compared to other multimodal medical reasoning models, Chiron-o1 demonstrates th
 <div align=center>
 <img width="550" alt="image" src="assets/result3.png">
 </div>
-<!-- <img src="assets/result2.png" style="max-width: 90%; height: auto; display: block; margin: auto; margin-bottom: 30px;" />
-
-
-
-
 
 ## 🙏🏼 Acknowledgement
 
