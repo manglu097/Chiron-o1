@@ -114,7 +114,7 @@ python ./eval/eval.py \
 
 We perform a series of comprehensive experiments using four high-performance baseline models: [HuatuoGPT-Vision](https://github.com/FreedomIntelligence/HuatuoGPT-Vision), [Med-R1](https://github.com/Yuxiang-Lai117/Med-R1), [MedVLM-R1](https://huggingface.co/JZPeterPan/MedVLM-R1), and others. The **Results** demonstrate the performance of the Chiron-o1 models compared to other cutting-edge models across various widely-used benchmarks, as illustrated in the table below.
 
-<img src="assets/result1.png" style="max-width: 80%; height: auto; display: block; margin: auto;" />
+<img src="assets/result1.png" style="max-width: 10%; height: auto; display: block; margin: auto;" />
 
 Compared to other multimodal medical reasoning models, Chiron-o1 demonstrates the ability to generate deep and reasonable reasoning paths, leading to correct answers.
 
