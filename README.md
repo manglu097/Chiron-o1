@@ -1,5 +1,5 @@
 <div align="center">
-<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Chiron-o1: Enhancing Step-by-Step Thinking in MLLMs for Verifiable Medical Reasoning via Mentor-Intern Collaborative Search </h1>
+<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Enhancing Step-by-Step and Verifiable Medical Reasoning in MLLMs </h1>
 </div>
 
 <h4 align="center"> If you find this project useful, please give us a star🌟.<h4 align="center"> 
@@ -132,7 +132,7 @@ Compared to other multimodal medical reasoning models, Chiron-o1 demonstrates th
 
 ## 🙏🏼 Acknowledgement
 
-We gratefully acknowledge the inspiring work of [Transformers](https://github.com/huggingface/transformers)  and [InternVL](https://github.com/OpenGVLab/InternVL),  which have provided essential foundations and inspiration for this project. We also thank the developers of these outstanding tools for their contributions to open-source innovation.
+We gratefully acknowledge the inspiring work of [Transformers](https://github.com/huggingface/transformers), [InternVL](https://github.com/OpenGVLab/InternVL) and [Mulberry](https://github.com/HJYao00/Mulberry),  which have provided essential foundations and inspiration for this project. We also thank the developers of these outstanding tools for their contributions to open-source innovation.
 
 ## 📖 Citation
 
