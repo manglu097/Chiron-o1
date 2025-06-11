@@ -1,5 +1,5 @@
 <div align="center">
-<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Chiron-o1: Enhancing Step-by-Step Reasoning in MLLMs for Verifiable Medical Reasoning via Mentor-Intern Collaborative Search </h1>
+<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Chiron-o1: Enhancing Step-by-Step Thinking in MLLMs for Verifiable Medical Reasoning via Mentor-Intern Collaborative Search </h1>
 </div>
 
 <h4 align="center"> If you find this project useful, please give us a star🌟.<h4 align="center"> 
