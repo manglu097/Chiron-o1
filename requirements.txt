@@ -1,6 +1,6 @@
-openai==1.84.0
-Pillow==11.2.1
-qwen_vl_utils==0.0.11
+openai==1.66.3
+Pillow==10.4.0
+qwen_vl_utils==0.0.10
 torch==2.6.0
 torchvision==0.21.0
 tqdm==4.67.1
