@@ -86,7 +86,7 @@ model = AutoModel.from_pretrained(
     load_in_8bit=False,
     low_cpu_mem_usage=True,
     use_flash_attn=True,
-    trust_remote_code=True).eval()
+    trust_remote_code=True).eval().cuda()
 tokenizer = AutoTokenizer.from_pretrained(path, trust_remote_code=True, use_fast=False)
 # Fill in your image
 pixel_values = load_image('./eval/infer_img.png', max_num=12).to(torch.bfloat16).cuda()
