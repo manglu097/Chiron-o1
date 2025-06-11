@@ -89,7 +89,7 @@ model = AutoModel.from_pretrained(
     trust_remote_code=True).eval()
 tokenizer = AutoTokenizer.from_pretrained(path, trust_remote_code=True, use_fast=False)
 # Fill in your image
-pixel_values = load_image('./eval/images/11.jpg', max_num=12).to(torch.bfloat16).cuda()
+pixel_values = load_image('./eval/infer_img.png', max_num=12).to(torch.bfloat16).cuda()
 generation_config = dict(max_new_tokens=4096, do_sample=True)
 
 # single-image 
