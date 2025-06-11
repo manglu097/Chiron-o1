@@ -77,6 +77,7 @@ We provide an example of pure text reasoning using [transformers](https://huggin
 
 ```python
 from transformers import AutoModel, AutoTokenizer
+import torch
 
 path = 'manglu3935/Chiron-o1-8B'
 model = AutoModel.from_pretrained(
