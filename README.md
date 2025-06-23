@@ -137,5 +137,10 @@ We gratefully acknowledge the inspiring work of [Transformers](https://github.co
 ## 📖 Citation
 
 ```
-
+@article{sun2025enhancingstepbystepverifiablemedical,
+  title={Enhancing Step-by-Step and Verifiable Medical Reasoning in MLLMs},
+  author={Haoran Sun and Yankai Jiang and Wenjie Lou and Yujie Zhang and Wenjie Li and Lilong Wang and Mianxin Liu and Lei Liu and Xiaosong Wang},
+  journal={arXiv preprint arXiv:2506.16962},
+  year={2025}
+}
 ```
