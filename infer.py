@@ -79,7 +79,7 @@ def load_image(image_file, input_size=448, max_num=12):
     return pixel_values
 
 
-path = 'manglu3935/Chiron-o1-8B'
+path = 'manglu3935/Chiron-o1-2B'
 model = AutoModel.from_pretrained(
     path,
     torch_dtype=torch.bfloat16,
@@ -88,12 +88,36 @@ model = AutoModel.from_pretrained(
     use_flash_attn=True,
     trust_remote_code=True).eval().cuda()
 tokenizer = AutoTokenizer.from_pretrained(path, trust_remote_code=True, use_fast=False)
+
+##########################################################
+# single images
 # Fill in your image
 pixel_values = load_image('./eval/infer_img.png', max_num=12).to(torch.bfloat16).cuda()
 generation_config = dict(max_new_tokens=4096, do_sample=True)
 
-# single-image 
 question = 'Based on the imaging findings of abnormal flattening of the left parieto-occipital bones in this 20-year-old male patient, what is the most likely diagnosis for this incidental finding? (Supplementary information is as follows:\nGender: Male, Age: 20 years, Chief complaint: Incidental findings)\nPlease base your response on the keyframes of the relevant medical imaging modality (Modality 1: <image>) and reason step-by-step to answer the above question.'
 response = model.chat(tokenizer, pixel_values, question, generation_config)
 print(f'User: {question}\nAssistant: {response}')
 
+##########################################################
+# Multiple images
+
+# img_paths = ['xxx.png', 'xxx.png']
+# question = 'xxxxxx'  # Make sure the number of <image> in question is consistent with the number of pictures
+# all_pixel_values = []
+# num_patches_list = []
+
+# for img_path in img_paths:
+#     pixel_values = load_image(img_path, max_num=12).to(torch.bfloat16).cuda()
+#     all_pixel_values.append(pixel_values)
+#     num_patches_list.append(pixel_values.size(0))
+
+# if len(all_pixel_values) > 0:
+#     pixel_values = torch.cat(all_pixel_values, dim=0)
+# else:
+#     pintt("Error: No images provided")
+
+# generation_config = dict(max_new_tokens=2048, do_sample=True)
+# response = model.chat(tokenizer, pixel_values, question, generation_config,
+#                     num_patches_list=num_patches_list)
+# print(f'User: {question}\nAssistant: {response}')
