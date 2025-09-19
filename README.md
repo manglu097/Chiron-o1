@@ -1,5 +1,5 @@
 <div align="center">
-<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Enhancing Step-by-Step and Verifiable Medical Reasoning in MLLMs </h1>
+<h1> <img src="assets/logo.png" style="vertical-align: -10px;" :height="50px" width="50px"> Chiron-o1: Igniting Multimodal Large Language Models towards Generalizable Medical Reasoning via Mentor-Intern Collaborative Search </h1>
 </div>
 
 <h4 align="center"> If you find this project useful, please give us a star🌟.<h4 align="center"> 
