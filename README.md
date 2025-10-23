@@ -6,7 +6,7 @@
 
 
 <p align="center">
-📃 <a href="" target="_blank">Paper</a> ｜ 🤗 <a href="https://huggingface.co/manglu3935/Chiron-o1-2B" target="_blank">Chiron-o1-2B</a> ｜ 🤗 <a href="https://huggingface.co/manglu3935/Chiron-o1-8B" target="_blank">Chiron-o1-8B</a> ｜ 📧 <a href="mailto:manglu3935@126.com">Email</a>
+📃 <a href="https://arxiv.org/abs/2506.16962" target="_blank">Paper</a> ｜ 🤗 <a href="https://huggingface.co/manglu3935/Chiron-o1-2B" target="_blank">Chiron-o1-2B</a> ｜ 🤗 <a href="https://huggingface.co/manglu3935/Chiron-o1-8B" target="_blank">Chiron-o1-8B</a> ｜ 📧 <a href="mailto:manglu3935@126.com">Email</a>
 </p>
 
 
